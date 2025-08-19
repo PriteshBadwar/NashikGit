@@ -1,0 +1,17 @@
+{
+  "name": "quote-automation-js",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright automation for stagemarine quote flow",
+  "scripts": {
+    "pretest": "node -e \"try{require('playwright')}catch(e){process.exit(0)}\" || npm i -D @playwright/test",
+    "test": "playwright test",
+    "show-report": "playwright show-report",
+    "codegen": "playwright codegen https://stagemarine.oicgulf.ae/quote/"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.47.2",
+    "dotenv": "^16.4.5"
+  }
+}
+
