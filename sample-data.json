@@ -1,0 +1,131 @@
+{
+  "quotationTypes": {
+    "marineServices": {
+      "serviceType": "Marine Services",
+      "description": "Comprehensive marine services including vessel maintenance, safety inspections, and operational support",
+      "budget": "75000",
+      "duration": "3 months",
+      "location": "Dubai Port",
+      "priority": "High",
+      "requirements": [
+        "Vessel maintenance",
+        "Safety inspections",
+        "Operational support",
+        "24/7 availability"
+      ]
+    },
+    "equipmentRental": {
+      "serviceType": "Equipment Rental",
+      "description": "Rental of marine equipment including cranes, winches, and safety equipment",
+      "budget": "25000",
+      "duration": "1 month",
+      "equipmentList": [
+        "Crane (50 ton capacity)",
+        "Winch system",
+        "Safety equipment",
+        "Communication devices"
+      ],
+      "deliveryRequired": true
+    },
+    "consulting": {
+      "serviceType": "Consulting Services",
+      "description": "Marine industry consulting including regulatory compliance, safety protocols, and operational efficiency",
+      "budget": "15000",
+      "duration": "2 weeks",
+      "consultantLevel": "Senior",
+      "areas": [
+        "Regulatory compliance",
+        "Safety protocols",
+        "Operational efficiency",
+        "Risk assessment"
+      ]
+    },
+    "maintenance": {
+      "serviceType": "Maintenance Services",
+      "description": "Preventive and corrective maintenance for marine vessels and equipment",
+      "budget": "45000",
+      "duration": "6 months",
+      "maintenanceType": "Preventive",
+      "services": [
+        "Engine maintenance",
+        "Hull inspection",
+        "Electrical systems",
+        "Safety equipment"
+      ]
+    },
+    "transport": {
+      "serviceType": "Transport Services",
+      "description": "Marine transport services including cargo handling and vessel movement",
+      "budget": "60000",
+      "duration": "4 months",
+      "cargoType": "General Cargo",
+      "routes": [
+        "Dubai to Abu Dhabi",
+        "Port to offshore locations",
+        "Inter-port transfers"
+      ]
+    }
+  },
+  "customerTemplates": {
+    "individual": {
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "phone": "+971501234567",
+      "address": "123 Test Street, Dubai, UAE",
+      "country": "UAE",
+      "city": "Dubai",
+      "postalCode": "12345"
+    },
+    "company": {
+      "name": "Test Company Ltd",
+      "email": "info@testcompany.com",
+      "phone": "+971501234568",
+      "address": "456 Business District, Dubai, UAE",
+      "country": "UAE",
+      "city": "Dubai",
+      "postalCode": "54321",
+      "website": "www.testcompany.com",
+      "industry": "Marine Services"
+    },
+    "government": {
+      "name": "Government Department",
+      "email": "contact@gov.ae",
+      "phone": "+971501234569",
+      "address": "Government Complex, Abu Dhabi, UAE",
+      "country": "UAE",
+      "city": "Abu Dhabi",
+      "postalCode": "98765",
+      "department": "Marine Affairs"
+    }
+  },
+  "formFieldMappings": {
+    "name": ["name", "full_name", "customer_name", "contact_name"],
+    "email": ["email", "email_address", "contact_email"],
+    "phone": ["phone", "telephone", "mobile", "contact_phone"],
+    "company": ["company", "company_name", "organization", "business_name"],
+    "address": ["address", "street_address", "location", "mailing_address"],
+    "description": ["description", "requirements", "details", "project_description"],
+    "budget": ["budget", "amount", "cost", "estimated_cost"],
+    "duration": ["duration", "timeline", "project_duration", "time_period"]
+  },
+  "defaultValues": {
+    "quantity": "1",
+    "priority": "Medium",
+    "urgency": "Normal",
+    "payment_terms": "Net 30",
+    "currency": "AED"
+  },
+  "validationRules": {
+    "email": "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$",
+    "phone": "^\\+?[1-9]\\d{1,14}$",
+    "budget": "^\\d+(\\.\\d{1,2})?$"
+  },
+  "automationSettings": {
+    "headless": false,
+    "screenshotOnError": true,
+    "waitTimeout": 30,
+    "retryAttempts": 3,
+    "retryDelay": 1000,
+    "keepBrowserOpen": true
+  }
+}
